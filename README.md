@@ -2,6 +2,8 @@
 
 Training an AI model for handwritten digit classification using multiple datasets, with Apple Metal (MPS) GPU acceleration.
 
+Resulting models are available as pytorch or onnx formats
+
 ## Datasets
 
 ### EMNIST Digits
