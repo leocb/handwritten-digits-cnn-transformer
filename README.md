@@ -4,8 +4,6 @@ Training an AI model for handwritten digit classification using multiple dataset
 
 Resulting models are available as pytorch or onnx formats
 
-this repo requires [git-lfs](https://git-lfs.github.com)
-
 ## Datasets
 
 ### EMNIST Digits
