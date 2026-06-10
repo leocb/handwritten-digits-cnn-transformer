@@ -3,3 +3,5 @@ dataset/y_val.pt
 dataset/y_train.pt
 dataset/X_val.pt
 dataset/X_train.pt
+dataset/HWD-V1/*
+dataset/emnist/*
