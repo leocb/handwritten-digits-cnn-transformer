@@ -5,5 +5,5 @@ dataset/X_val.pt
 dataset/X_train.pt
 dataset/HWD-V1/*
 dataset/emnist/*
-hf_dataset/train.parquet
-hf_dataset/validation.parquet
+dataset/*.pt.gz
+hf_dataset/*.parquet
