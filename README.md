@@ -4,6 +4,8 @@ Training an AI model for handwritten digit classification using multiple dataset
 
 Resulting models are available as pytorch or onnx formats
 
+this repo requires [git-lfs](https://git-lfs.github.com)
+
 ## Datasets
 
 ### EMNIST Digits
@@ -39,6 +41,6 @@ CNN + Transformer Hybrid based on [Rajest & Regin (2024)](https://cajmns.central
 
 ## Usage
 
-1. Run `dataset_prep.ipynb` to load, preprocess, and merge all datasets
+1. Run `dataset_prep.ipynb` to load, preprocess, and merge all datasets (note that the 1st and 2nd datasets must be downloaded manually and saved inside the `dataset` folder, the 3rd dataset is downloaded automatically)
 2. Output tensors saved to `dataset/` as `X_train.pt.gz`, `y_train.pt.gz`, `X_val.pt.gz`, `y_val.pt.gz`
 3. Run `train_model.ipynb` to train the CNN+Transformer model (MPS-accelerated)
