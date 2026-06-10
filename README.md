@@ -28,7 +28,15 @@ Training an AI model for handwritten digit classification using multiple dataset
 pip install -r requirements.txt
 ```
 
+## Model
+
+CNN + Transformer Hybrid based on [Rajest & Regin (2024)](https://cajmns.centralasianstudies.org/index.php/CAJMNS):
+- **CNN**: Conv+BN+ReLU+Pool blocks extract low-level features (edges, shapes)
+- **Transformer**: 4 encoder layers with 8-head self-attention capture spatial dependencies
+- **Head**: Mean pool → FC → 10-class softmax
+
 ## Usage
 
 1. Run `dataset_prep.ipynb` to load, preprocess, and merge all datasets
 2. Output tensors saved to `dataset/` as `X_train.pt.gz`, `y_train.pt.gz`, `X_val.pt.gz`, `y_val.pt.gz`
+3. Run `train_model.ipynb` to train the CNN+Transformer model (MPS-accelerated)
